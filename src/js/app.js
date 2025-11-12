@@ -38,22 +38,25 @@ function render(variables = {}) {
           <h2> ${variables.role || "Web Developer"}</h2>
           <h3> ${variables.city || "Miami"}, ${variables.country || "USA"}</h3>
           <ul class= ${variables.socialMediaPosition}>
-            <li><a href="https://twitter.com/${variables.twitter
-    }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${variables.github
-    }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/${variables.twitter
-    }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${variables.instagram
-    }"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${
+              variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/school/${
+              variables.twitter
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
 }
 
-/**
- * Don't change any of the lines below, here is where we do the logic for the dropdowns
- 
+//Don't change any of the lines below, here is where we do the logic for the dropdowns
+
 window.onload = function() {
   window.variables = {
     // if includeCover is true the algorithm should show the cover image
